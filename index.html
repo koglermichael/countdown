@@ -8,15 +8,55 @@
     <script src="script/script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Pause in:</h1>
-      <ul>l
-        <li><span id="days"></span>days</li>
-        <li><span id="hours"></span>Hours</li>
-        <li><span id="minutes"></span>Minutes</li>
-        <li><span id="seconds"></span>Seconds</li>
-      </ul>
-      <span id="afterAll"></span>
+    <!-- <div id="fullAuswahl"> -->
+      <div id="setCountdown">
+        <h1>Create Countdown</h1>
+        <span>
+          <h3>Überschrift und Überschriftsfarbe für den Countdown</h3>
+          <input id="uebText" type="text">
+          <input id="uebColor" type="color">
+        </span>
+
+        <span>
+          <h2>Set Countdown & Farbe</h2>
+          <input id="countdownFinished" type="datetime-local">
+          <input id="countdownColor" type="color">
+        </span>
+
+        <span>
+          <h3>Text und Textfarbe der beim Ende des Countdowns angezeigt wird</h3>
+          <input id="afterText" type="text">
+          <input id="afterColor" type="color">
+        </span>
+
+        <span>
+          <h3>Hintergrundbild/Farbe während dem Countdown:</h3>
+          <!-- <input id="imgWhileCountdown" type="file" accept=".jpg, .png"> -->
+          <input id="colorWhileCountdown" type="color" value="#ffffff">
+        </span>
+
+        <span>
+          <h3>Hintergrunbild/Farbe nach dem Countdown:</h3>
+          <!-- <input id="imgAfterCountdown" type="file" accept=".jpg, .png"> -->
+          <input id="colorAfterCountdown" type="color" value="#ffffff">
+        </span>
+
+        
+        <button id="startCountdown">Start Countdown</button>
+      </div>
+  <!-- </div> -->
+    <div id="countdown">
+      <h1 id="uebCountdown"></h1>
+      <div id="container">
+        <ul id="listUL">
+          <li><span id="days"></span>days</li>
+          <li><span id="hours"></span>Hours</li>
+          <li><span id="minutes"></span>Minutes</li>
+          <li><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div>  
+      <h3 id="afterCountdown"></h3>
     </div>
+    
   </body>
 </html>

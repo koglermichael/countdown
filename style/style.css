@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
 }
-
+/* 
 h1 {
   font-weight: normal;
-}
+} */
 
 li {
   display: inline-block;
@@ -21,16 +21,8 @@ li span {
   font-size: 4.5rem;
 }
 
-
-/* general styling */
-html,
 body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  background-image: url("../img/banana.jpg");
+  /* background-image: url("../img/banana.jpg"); */
   /* background-color: #efefef; */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
@@ -42,7 +34,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #e7ecf3;
+  /* background-color: #e7ecf3; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,9 +49,117 @@ body {
     sans-serif;
 }
 
-.container {
+#countdown {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container {
   color: #333;
   margin: 0 auto;
   padding: 0.5rem;
   text-align: center;
+  display: flex;
+}
+
+#uebCountdown {
+  font-size: 4em;
+  font-weight: normal;
+}
+
+#afterCountdown {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+#setCountdown {
+  /* width: 60vw; */
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+#setCountdown h1 {
+  margin: 2vh 0;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#setCountdown span {
+  margin: 2vh 0;
+}
+
+#setCountdown span h2, #setCountdown span h3 {
+  font-weight: normal;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  border-bottom: solid lightgray 1.5px;
+  transition: 200ms border-bottom ease-in-out;
+}
+
+input[type="datetime-local"] {
+  border: none;
+  outline: none;
+}
+
+/* wenn man hinein klickt ändert sich die Farbe */
+input:focus[type="text"] {
+  border-bottom: solid cornflowerblue 1.5px;
+}
+
+input[type="color"] {
+  width: 3rem;
+  height: 3rem;
+  padding: .5rem;
+  background-color: transparent;
+  border: 0;
+  border-radius: 100%;
+}
+
+input[type="color" i] {
+  -webkit-appearance: square-button;
+  width: 44px;
+  height: 23px;
+  background-color: buttonface;
+  cursor: default;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(169, 169, 169);
+  border-image: initial;
+  padding: 1px 2px;
+}
+
+#startCountdown {
+  width: 60%;
+  margin: 2vh 0;
+  padding: 0vh 1.5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Farbe ändert sich */
+#startCountdown {
+  padding: .75vw;
+  border: solid cornflowerblue 1.5px;
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+  color: cornflowerblue;
+  cursor: pointer;
+  transition: 300ms background ease-in-out, 300ms color ease-in-out;
+}
+
+#startCountdown:hover {
+  background: cornflowerblue;
+  color: #ffffff;
 }
