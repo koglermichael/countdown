@@ -58,10 +58,10 @@ window.addEventListener("load", () => {
 
 
         if (distance < 0) {
-          document.getElementById("days").innerText = "You";
-          document.getElementById("hours").innerText = "Ma";
-          document.getElementById("minutes").innerText = "de";
-          document.getElementById("seconds").innerText = "it";
+          document.getElementById("days").innerText = "0";
+          document.getElementById("hours").innerText = "0";
+          document.getElementById("minutes").innerText = "0";
+          document.getElementById("seconds").innerText = "0";
 
           let after = document.getElementById('afterCountdown');
           after.innerText = afterText;
